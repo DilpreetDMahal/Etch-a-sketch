@@ -1,0 +1,29 @@
+body {
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 500px; /* Sets the size of your grid area */
+  height: 500px;
+  border: 2px solid black; /* Optional: lets you see the outer boundary */
+}
+
+.container div {
+  width: 5.85%;
+  height: 5.85%;
+  background-color: aliceblue;
+  border: 1px solid black; /* Soft border for visual guide */
+}
+
+button {
+  color: black;
+}
