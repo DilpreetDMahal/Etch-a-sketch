@@ -18,8 +18,7 @@ body {
 }
 
 .container div {
-  width: 5.85%;
-  height: 5.85%;
+  box-sizing: border-box;
   background-color: aliceblue;
   border: 1px solid black; /* Soft border for visual guide */
 }
