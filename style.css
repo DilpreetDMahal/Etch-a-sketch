@@ -20,7 +20,7 @@ body {
 .container div {
   box-sizing: border-box;
   background-color: aliceblue;
-  border: 1px solid black; /* Soft border for visual guide */
+  /* border: 1px solid black;  */
 }
 
 button {

@@ -1,6 +1,7 @@
 const square = parseInt(prompt("How many square's ?"));
 const container = document.querySelector(".container");
 const btn = document.createElement("button");
+let isDrawing = false;
 btn.textContent = "RESET";
 document.body.appendChild(btn);
 const containerSize = 500;
@@ -20,8 +21,14 @@ function rgbColor() {
   return `rgb(${r}, ${g}, ${b})`;
 }
 
+container.addEventListener("click", () => {
+  isDrawing = !isDrawing;
+});
+
 container.addEventListener("mouseover", (event) => {
-  event.target.style.backgroundColor = rgbColor();
+  if (isDrawing && event.target !== container) {
+    event.target.style.backgroundColor = "black";
+  }
 });
 
 btn.addEventListener("click", () => {
